@@ -1,0 +1,23 @@
+<view class="content">
+ <form bindsubmit="showToast">
+   <view class='box'>
+    <view>
+    <text>姓名：</text><input placeholder='请输入预约姓名'></input>
+  </view>
+   <view>
+    <text>电话：</text><input placeholder='请输入预约电话'></input>
+  </view>
+  <view>
+    <text>省：</text><picker bindchange="sheng" value="{{sheng[index]}}" range="{{sheng}}"><text class="input">{{sheng[index]}}</text></picker>
+  </view>
+  <view>
+    <text>市：</text><picker bindchange="shi" value="{{shi[index]}}" range="{{shi[index]}}"><text class="input">{{shi[index][num]}}</text></picker>
+  </view>
+  <view>
+    <text>地址：</text><input placeholder='请输入预约电话'></input>
+  </view>
+  </view>
+  <button class='btn' formType="submit">保存</button>
+  <toast hidden="{{saveToastHidden}}" bindchange="hideToast">保存成功</toast>
+ </form>
+</view>

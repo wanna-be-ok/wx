@@ -1,0 +1,44 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/product/product",
+    "pages/zj/zj",
+    "pages/add/add",
+    "pages/me/me"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#37383c",
+    "navigationBarTitleText": "美容",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#d24a58",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/home.png",
+        "selectedIconPath": "image/home-active.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "技师",
+        "iconPath": "image/skill_icon.png",
+        "selectedIconPath": "image/skill_icon_HL.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "image/user_icon.png",
+        "selectedIconPath": "image/user_icon_HL.png"
+      }
+    ]
+  }
+}

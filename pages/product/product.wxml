@@ -1,0 +1,23 @@
+<view class="product">
+  <view class="img">
+      <image src="../../image/banner_02.png" mode="aspectFill"></image>
+  </view>
+  <view class="addr">
+      <picker class="list" bindchange="chanegAddr" value="{{num}}" range="{{addrs}}">
+        <text>{{addrs[num]}}</text>
+      </picker>
+  </view>
+  <view class="neirong">
+    <text>服务时间</text>  
+    <view class="time">
+      <picker mode="date" value="{{data}}" start="2015-09-01" end="2022-09-01" bindchange="checkTime"> <view class="showTime" >{{data}}</view></picker>
+      <picker mode="time" value="{{time}}" start="01:00" end="24:00" bindchange="jiaosha"><view class="jiaosha">{{time}}</view></picker>
+    </view>
+    <text>留言信息</text>
+    <form  bindsubmit="showToast">
+      <input type="text" placeholder="输入信息" class="input" placeholder-style="font-family:'微软雅黑'"/>
+      <button class="btn"  formType="submit">确认预订</button>
+      <toast hidden="{{saveToastHidden}}" bindchange="hideToast" >确认预订</toast>
+    </form>
+  </view>
+</view>

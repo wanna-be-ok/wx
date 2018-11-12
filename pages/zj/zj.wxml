@@ -1,0 +1,33 @@
+<view class="content">
+  <view class="img">
+    <image src="../../image/skilledt_banner.png" mode="aspectFill"></image>
+  </view>
+  <view class="title">
+    <text class="h">{{namearr[id]}}</text>
+    <text class="p">高级美容师就是指美容师中技术能力更好，获得了高级美容师资格证的美容师。美容师是一种专业美容领域的职业称谓。</text>
+  </view>
+  <view class="bt">【服务内容】</view>
+  <view class="ul">
+    <view class="li">
+      <text class="name">洗脸</text>
+      <view>
+      <text class="price">￥600</text>
+      <text class="y" data-id="{{id}}" bindtap="goProduct">预约</text>
+      </view>
+    </view>
+    <view class="li">
+      <text class="name">刮胡子</text>
+      <view>
+      <text class="price">￥800</text>
+      <text class="y" data-id="{{id}}" bindtap="goProduct">预约</text>
+      </view>
+    </view>
+    <view class="li">
+      <text class="name">搓澡</text>
+      <view>
+      <text class="price">￥1200</text>
+      <text class="y" data-id="{{id}}" bindtap="goProduct">预约</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,59 @@
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content .user {
+  width: 100%;
+  font-size:30rpx;
+  margin:80rpx 0rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.content .user .img {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 100%;
+  margin-right: 80rpx;
+}
+.content .user .img image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.content .user .text{
+  font-size: 30rpx;
+}
+.content .dizhi {
+   width: 100%;
+  font-size:30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.content .dizhi .title {
+  width: 100%;
+  font-size: 40rpx;
+  text-align: center;
+  margin-bottom:50rpx;
+}
+.content .dizhi .lis {
+  box-sizing: border-box;
+  padding: 20rpx 50rpx;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+.content .dizhi .add {
+  color:#d24a58;
+  text-align: center;
+  padding: 40rpx 50rpx;
+  border-bottom: 1px solid #ccc;  
+}
+.content .text text {
+  display: inline-block;
+  width: 260rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

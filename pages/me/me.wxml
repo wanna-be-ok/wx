@@ -1,0 +1,30 @@
+<view class="content">
+  <view class="user">
+    <view class="img">
+      <image src="../../image/avatar.png" mode="aspectFill"></image>
+    </view>
+    <view class="text">
+      <text>
+      昵称：Tom
+      姓名：王大话
+      电话：13312312355
+      地址：北京市朝阳区朝外大街 麒麟公馆</text> 
+    </view>
+  </view>
+  <view class="dizhi">
+    <view class="title">
+      <text class="h2">【地址管理】</text>
+    </view>
+    <view class="lis">
+      <text>Tom 13312312355
+      北京市朝阳区朝外大街 麒麟公馆</text>      
+    </view>
+    <view class="lis">
+      <text>Jerry 15512312366
+      北京市海淀区 幸福家园</text>
+    </view>
+    <view class="add" bindtap="goAdd">
+      <text>新增地址+</text>
+    </view>
+  </view>
+</view>

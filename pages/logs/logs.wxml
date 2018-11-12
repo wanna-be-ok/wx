@@ -1,0 +1,65 @@
+<view class="check">
+  <picker class="list" bindchange="chanegList" value="{{index}}" range="{{list}}">
+      <text>{{list[index]}}</text>
+  </picker>
+</view>
+<view class="addr">
+  <picker class="list" bindchange="chanegAddr" value="{{num}}" range="{{addrs}}">
+      <text>{{addrs[num]}}</text>
+  </picker>
+</view>
+<!--技师介绍  -->
+<view class="list" >
+  <view class="li" data-pid="0"  bindtap="goZj" >
+    <view class="img">
+      <image src="../../image/skilledt_img_01.png" mode="aspectFill"></image>
+    </view>
+    <view class="p">
+      <text class="h3">凯文总监</text>
+      <text class="price">价格：￥666</text>
+      <text class="title">擅长大宝剑</text>
+    </view>
+    <view class="yue">
+      <text>200m</text>
+    </view>
+  </view>
+   <view class="li" data-pid="1" bindtap="goZj" >
+    <view class="img">
+      <image src="../../image/skilledt_img_02.png" mode="aspectFill"></image>
+    </view>
+    <view class="p">
+      <text class="h3">托尼总监</text>
+      <text class="price">价格：￥666</text>
+      <text class="title">擅长正骨</text>
+    </view>
+    <view class="yue">
+      <text>500m</text>
+    </view>
+  </view>
+  <view class="li" data-pid="2" bindtap="goZj" >
+    <view class="img">
+      <image src="../../image/skilledt_img_03.png" mode="aspectFill"></image>
+    </view>
+    <view class="p">
+      <text class="h3">温妮总监</text>
+      <text class="price">价格：￥888</text>
+      <text class="title">擅长换脸</text>
+    </view>
+    <view class="yue">
+      <text>400m</text>
+    </view>
+  </view>
+  <view class="li"  data-pid="3" bindtap="goZj">
+    <view class="img">
+      <image src="../../image/skilledt_img_04.png" mode="aspectFill"></image>
+    </view>
+    <view class="p">
+      <text class="h3">唐尼总监</text>
+      <text class="price">价格：￥999</text>
+      <text class="title">啥都擅长</text>
+    </view>
+    <view class="yue">
+      <text>500m</text>
+    </view>
+  </view> 
+</view>

@@ -1,0 +1,45 @@
+<view class="slider">
+  <swiper autoplay interval='4000' duration="300" indicator-dots="true" >
+    <swiper-item class="slider_item" wx:for="{{banner}}" wx:key="{{index}}">
+      <image src="{{item}}" width="375" height="100" mode="aspectFill"></image>
+    </swiper-item>
+    </swiper>   
+</view>
+<view class="index_nav">
+  <navigator data-index="0" class="{{classname}}" bindtap="changeColor">
+    <image src="../../image/nav_icon_01.png" mode="aspectFill"></image>
+    <text class="text0">推荐</text>
+  </navigator>
+  <navigator data-index="1" class="{{classname}}" bindtap="changeColor">
+    <image src="../../image/nav_icon_02.png" mode="aspectFill"></image>
+    <text class="text1">美甲</text>
+  </navigator>
+  <navigator data-index="2" class="{{classname}}" bindtap="changeColor">
+    <image src="../../image/nav_icon_03.png" mode="aspectFill"></image>
+    <text class="text2">美容</text>
+  </navigator>
+  <navigator data-index="3" class="{{classname}}" bindtap="changeColor">
+    <image src="../../image/nav_icon_04.png" mode="aspectFill"></image>
+    <text class="text3">美发</text>
+  </navigator>
+  <navigator data-index="4" class="{{classname}}" bindtap="changeColor">
+    <image src="../../image/nav_icon_05.png" mode="aspectFill"></image>
+    <text class="text4">美睫</text>
+  </navigator>
+</view>
+<view class="list" >
+  <view class="li" wx:for="{{mimg}}" wx:key="{{index}}" wx:if="{{ index >= xiha}}">
+    <view class="img">
+      <image src="{{mimg[index]}}" mode="aspectFill"></image>
+    </view>
+    <view class="p">
+      <text class="h3">{{mh[index]}}</text>
+      <text class="price">价格：￥{{mprice[index]}}</text>
+      <text class="title">{{mtitle[index]}}</text>
+    </view>
+    <view class="yue">
+      <text bindtap="goProduct" data-id="{{index}}">预约</text>
+    </view>
+  </view>
+ 
+</view>
